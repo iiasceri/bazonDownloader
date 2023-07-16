@@ -1,1 +1,1 @@
-ffmpeg -i "" -c copy output.mp4
+ffmpeg -i "" -codec copy -bsf:a aac_adtstoasc -f mp4 output.mp4
