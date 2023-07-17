@@ -1,1 +1,1 @@
-ffmpeg -i "" -codec copy -bsf:a aac_adtstoasc -f mp4 output.mp4
+ffmpeg -i "" -c:v libx264 -c:a aac -vf "scale=-1:2160" film.mp4
